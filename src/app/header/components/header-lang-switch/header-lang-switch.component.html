@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="flex-row d-flex justify-content-end">
+    <div>
+      <button class="btn btn-outline-warning btn-sm" [ngClass]="{'active': this.EN}"
+        (click)="requestChangeLang('EN')">EN</button>
+    </div>
+    <div>
+      <button class="btn btn-outline-warning btn-sm" [ngClass]="{'active': this.DE}"
+        (click)="requestChangeLang('DE')">DE</button>
+    </div>
+  </div>
+  <div class="flex-row justify-content-start">
+    <h1>Hello, the current language value is {{ currentLang }}</h1>
+  </div>
+</div>
