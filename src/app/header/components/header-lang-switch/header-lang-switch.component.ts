@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header-lang-switch',
@@ -12,7 +13,7 @@ export class HeaderLangSwitchComponent implements OnInit {
   changeLang: EventEmitter<any> = new EventEmitter();
   DE = false;
   EN = true;
-  constructor() {}
+  constructor(private langService: TranslateService) {}
 
   ngOnInit() {}
 
